@@ -46,27 +46,19 @@ int main() {
 	int delNum;
 	TSet.PrintSet();
 	system("pause");
-	cout << "Enter La'BAGET:" << endl;
+	cout << "Enter element to delete:" << endl;
 	cin >> delNum;
-	TSet- delNum;
+	TSet - delNum;
 	TSet.PrintSet();
 	Set<int>PODSet(1);
+	cout << endl << "Set 2 is multiplicity for Set 1: ";
 	if (TSet>PODSet)
 	cout << endl << "YES";
 	else cout << endl << "NO";
+	cout << "Set 1 and Set 2 are not equal: ";
 	if (TSet != PODSet)
-		cout << "DICK";
-	else cout << "COCK";
-	/*std::cout<"Пересечение множеств:"<<std::endl;
-	Set<int> TSetMul1(1);
-	Set<int> TSetMul2(1);
-		TSetMul1 = TSetMul1 * TSetMul2;
-
-	std::cout<< std::endl;
-	std::cout<<"Сравнениемножеств:"<< std::endl;
-	Set<int> TSetComp1(1);
-	Set<int> TSetComp2(1);
-	std::cout<< (TSetComp1 < TSetComp2 ?  "Первое множество меньше второго" :"Второе множество меньше первого") <<std::endl;*/
+		cout << "YES";
+	else cout << "NO";
 	system("pause");
 	return 0;
 }
