@@ -39,27 +39,47 @@ void main()
 	return;
 }*/
 #include "Header.h"
-int main() {
-	setlocale(LC_ALL, "rus");
+//int main() {
+//	setlocale(LC_ALL, "rus");
+//	int num;
+//	Set<int>TSet(1);
+//	int delNum;
+//	TSet.PrintSet();
+//	system("pause");
+//	cout << "Enter element to delete:" << endl;
+//	cin >> delNum;
+//	TSet - delNum;
+//	TSet.PrintSet();
+//	Set<int>PODSet(1);
+//	cout << endl << "Set 2 is multiplicity for Set 1: ";
+//	if (TSet>PODSet)
+//	cout  << "YES" << endl;
+//	else cout << "NO" << endl;
+//	cout << "Set 1 and Set 2 are not equal: ";
+//	if (TSet != PODSet)
+//		cout << "YES";
+//	else cout << "NO";
+//	cout << endl;
+//	cin >> num;
+//	TSet + num;
+//	cout << endl;
+//	TSet.PrintSet();
+//	system("pause");
+//	return 0;
+//}
 
-	Set<int>TSet(1);
-	int delNum;
-	TSet.PrintSet();
-	system("pause");
-	cout << "Enter element to delete:" << endl;
-	cin >> delNum;
-	TSet - delNum;
-	TSet.PrintSet();
-	Set<int>PODSet(1);
-	cout << endl << "Set 2 is multiplicity for Set 1: ";
-	if (TSet>PODSet)
-	cout << endl << "YES";
-	else cout << endl << "NO";
-	cout << "Set 1 and Set 2 are not equal: ";
-	if (TSet != PODSet)
-		cout << "YES";
-	else cout << "NO";
-	system("pause");
+int main() {
+
+	try {
+		Translate trans;
+		trans.GetNum(); //считываем число дл€ перевода
+		trans.TranslateToEight();
+	}
+	catch (Translate::TranslateEx) //ловим исключение
+	{
+		cout << "\n¬ведено некорректное значение!";
+	}
 	return 0;
 }
+
 
